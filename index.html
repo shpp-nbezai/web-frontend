@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/normalize.css">
+    <link rel="stylesheet" href="./styles/vendors/fontello/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="styles/less/styles.less" />
+    <script>
+        less = {
+            env: "development"
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <form class="login-box" method="post">
+        <div>
+            <i class="icon-user-secret logo"></i>
+            <span class="login-box_description">Kirovohrad is falling asleep...</span>
+        </div>
+        <div class="login-box_wrapper">
+            <input class="login-box_wrapper-login" type="text" name="login" placeholder="Username">
+            <input class="login-box_wrapper-password" type="password" name="password" placeholder="Password">
+            <div class="forgot-link">
+                <a class="login-box_wrapper-link" href="http://">Forgot?</a>
+            </div>
+            <input class="login-box_wrapper-submit-button" type="submit" value="Sign in ">
+        </div>
+    </form>
+</div>
+</body>
+</html>
