@@ -10,7 +10,6 @@
 @formWidth: 300px;
 
 body {
-  margin: 0;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
@@ -23,7 +22,7 @@ body {
   align-items: center;
   background: #colors[general];
 
-  .login-form {
+  .login-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,20 +36,25 @@ body {
 
     .logo {
       color: #colors[text];
+      font-size: 3rem;
+      display: block;
     }
 
-    p {
+    .login-box_description {
+      display: block;
       color: #colors[text];
       font-size: 13px;
       font-weight: bold;
       margin: 20px auto;
     }
 
-    .input-wrapper {
+    .login-box_input-wrapper {
       width: calc(@formWidth - 60px);
       box-sizing: border-box;
 
-      input {
+      .input-wrapper_login,
+      .input-wrapper_password,
+      .submit-button {
         width: 100%;
         box-sizing: border-box;
         margin: 1px 0;
@@ -78,7 +82,7 @@ body {
         align-items: flex-end;
       }
 
-      a {
+      .input-wrapper_link {
         display: block;
         color: #colors[text];
         font-size: 13px;
@@ -89,7 +93,7 @@ body {
         transition: color 1s;
       }
 
-      a:hover {
+      .input-wrapper_link:hover {
         color: #colors[red];
       }
 
@@ -113,7 +117,7 @@ body {
       width: @fullWidth;
       height: @fullHeight;
       margin-top: 0;
-      .input-wrapper {
+      .login-box_input-wrapper {
         padding: 1rem;
         width: 100%;
       }
