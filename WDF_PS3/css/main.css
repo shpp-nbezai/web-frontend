@@ -1,0 +1,24 @@
+body {
+  font-size: 16px;
+}
+
+.page-title {
+    padding: 1rem;
+}
+
+.logo {
+  height: 35px;
+}
+
+.statistic {
+    height: 100vh;
+}
+
+#users {
+    margin: 1rem;
+}
+
+.user-name {
+    padding-top: 1.5rem;
+}
+

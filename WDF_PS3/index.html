@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Admin Page</title>
+</head>
+<body>
+<header class="section container is-paddingless">
+    <div class="columns has-background-info has-text-white page-title">
+        <div class="column is-3"><img src="./images/icons/logo-inner.svg" alt="Roboclub" class="logo"></div>
+        <div class="column item title has-text-white">
+            <p class="has-text-left">
+                Admin panel
+            </p>
+        </div>
+        <div class="column is-2">
+            <div class="columns">
+                <div class="column is-4 has-text-centered">
+                    <i class="fas fa-user fa-3x level"></i>
+                </div>
+                <div class="column user-name">
+                    <label class="is-success has-text-weight-semibold" id="username">User name</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="statistic section container">
+    <div class="columns">
+        <div class="column is-four-fifths">
+            <div class="level">
+                <div class="level-item is-rounded is-bordered">
+                    <div class="columns is-fullwidth">
+                        <div class="column">
+                            <i class="fas fa-user fa-3x level"></i>
+                        </div>
+                        <div class="column">
+                            <label class="is-success panel panel-heading">Visitors</label><br>
+                            <label class="is-success is-fullwidth panel-block" id="visitors">13000</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div class="columns">
+                        <div class="column">
+                            <i class="far fa-share-square fa-3x"></i>
+                        </div>
+                        <div class="column">
+                            <label class="is-success panel panel-heading">Shares</label><br>
+                            <label class="is-success is-fullwidth panel-block" id="shares">13000</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div class="columns">
+                        <div class="column">
+                            <i class="fas fa-dollar-sign fa-3x"></i>
+                        </div>
+                        <div class="column">
+                            <label class="is-success panel panel-heading">Orders</label><br>
+                            <label class="is-success is-fullwidth panel-block" id="orders">13000</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="level-item">
+                    <div class="columns">
+                        <div class="column">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </div>
+                        <div class="column">
+                            <label class="is-success panel panel-heading">Messages</label><br>
+                            <label class="is-success is-fullwidth panel-block" id="messages">13000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-fifth">
+            <div class="level">
+                <div class="level-item">
+                    <div class="columns">
+                        <div class="column">
+                            <i class="far fa-frown fa-3x"></i>
+                        </div>
+                        <div class="column">
+                            <label class="is-success panel panel-heading">Falldowns</label><br>
+                            <label class="is-success is-fullwidth panel-block" id="falldowns">13000</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="columns">
+        <div class="column is-four-fifths">
+            <div class="level">
+                <div class="level-left">
+                    <label class="is-success is-size-4 has-text-weight-semibold">Users</label>
+                    <label class="is-success is-fullwidth" id="users">13000</label>
+                </div>
+                <div class="level-left">
+                    <button class="button is-info" type="submit">
+                        <span>Add new</span>
+                    </button>
+                </div>
+                <div class="level-right text-right">
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" placeholder="Search">
+                        </p>
+                        <p class="control">
+                            <a class="button is-info">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <table class="table is-striped is-fullwidth is-hoverable is-bordered">
+                    <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Username</th>
+                        <th>Created</th>
+                        <th>Last login</th>
+                        <th>E-mails</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Nikolay Bezay</td>
+                        <td>Meltic</td>
+                        <td>11.04.15</td>
+                        <td>16.03.18</td>
+                        <td>nikolay.bezay@gmail.com</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="button is-info edit-button"><i class="far fa-edit"></i></button>
+                                <button class="button is-info delete-button"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nikolay Bezay</td>
+                        <td>Meltic</td>
+                        <td>11.04.15</td>
+                        <td>16.03.18</td>
+                        <td>nikolay.bezay@gmail.com</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="button is-info edit-button"><i class="far fa-edit"></i></button>
+                                <button class="button is-info delete-button"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nikolay Bezay</td>
+                        <td>Meltic</td>
+                        <td>11.04.15</td>
+                        <td>16.03.18</td>
+                        <td>nikolay.bezay@gmail.com</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="button is-info edit-button"><i class="far fa-edit"></i></button>
+                                <button class="button is-info delete-button"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="column is-one-fifth is-centered">
+            <nav class="panel">
+                <p class="panel-heading">Kiev Weather</p>
+                <div class="panel-block">
+                    <button class="button is-info is-outlined is-fullwidth">
+                        reset all filters
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<div class="modal" id="modal-edit">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-info">
+        <nav class="panel is-rounded">
+            <p class="panel-heading">
+                Edit user
+            </p>
+            <div class="panel-block">
+                <div class="control ">
+                    <input class="input" type="text" placeholder="Full name">
+                </div>
+            </div>
+            <div class="panel-block">
+                <div class="control">
+                    <input class="input" type="text" placeholder="User name">
+                </div>
+            </div>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="panel-block ">
+                <button class="button is-link is-outlined is-right" type="submit">
+                    Save
+                </button>
+            </div>
+        </nav>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
