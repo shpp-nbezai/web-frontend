@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endinject -->
+    <title>Admin Page</title>
+</head>
+<body>
+    <header>
+        <div class="container row center-block page-title panel-heading">
+            <div class="col-lg-3"><img src="./images/icons/logo-inner.svg" alt="Roboclub"></div>
+            <div class="col-lg-6"> Dashboard Title</div>
+            <div class="col-lg-3">User name</div>
+        </div>
+    </header>
+    <section class="statistic">
+        <div class="container row center-block panel-body panel-success">
+            <div class="col-lg-2 panel panel-primary text-center">
+                Visitors <br>
+                <span class="badge">8</span>
+            </div>
+            <div class="col-lg-2 panel panel-primary text-center">
+                Shares <br>
+                <span class="badge">8</span>
+            </div>
+            <div class="col-lg-2 panel panel-primary text-center">
+                Orders <br>
+                <span class="badge badge-info">8</span>
+            </div>
+            <div class="col-lg-2 panel panel-primary text-center">
+                Messages <br>
+                <span class="badge badge-info">8</span>
+            </div>
+            <div class="col-lg-2 panel panel-primary text-center">
+                Falldowns <br>
+                <span class="badge badge-info">8</span>
+            </div>
+        </div>
+    </section>
+    <section class="data">
+        <div class="container row center-block">
+            <div class="col-lg-10 panel-body">
+                <div class="row panel-heading">
+                    <div class="col-lg-3 text-left">Users</div>
+                    <div class="col-lg-3 text-left">
+                        <button class="btn btn-primary" type="submit">
+                            <span>Add new</span>
+                        </button>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <form action="#" id="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Username</th>
+                            <th>Created</th>
+                            <th>Last login</th>
+                            <th>E-mails</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Nastya Smirnova</td>
+                            <td>nsmirnova</td>
+                            <td>11.04.13</td>
+                            <td>16.03.14</td>
+                            <td>someone@gmail.com</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary"><i class="glyphicon glyphicon-edit"></i></button>
+                                    <button class="btn btn-primary"><i class="glyphicon glyphicon-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-2 panel-body ">
+                wether
+            </div>
+        </div>
+    </section>
+    <!-- inject:js -->
+    <script src="js/index.js"></script>
+    <script src="js/libs.min.js"></script>
+    <!-- endinject -->
+</body>
+</html>
