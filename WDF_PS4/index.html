@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bulma.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Pokemon Game</title>
+</head>
+<body>
+<div id="app">
+    <div class="section container">
+        <div class="columns">
+            <div class="column">
+                <h4>{{ fighterOne.name }}</h4>
+                <h6> Level is {{ fighterOne.level }}</h6>
+                <input v-model="fighterOne.name">
+                <hr>
+                <select v-model="fighterOne.element">
+                    <option v-for="item in fighterOne.elements" v-bind:item="item">
+                        {{ item }}
+                    </option>
+                </select>
+                <span> You element is: {{ fighterOne.element }}</span>
+                <hr>
+                <p>{{ fighterOne.experience }}</p>
+            </div>
+            <div class="column">
+                <div class="columns column">
+                    <span>Winner of the raund  <== {{ winner.name }} ==></span>
+                </div>
+                <div class="columns column">
+                </div>
+                <button class="button is-primary" v-on:click="fight">fight</button>
+                <button class="button is-primary" v-on:click="upFighterOne">upFighterOne</button>
+                <button class="button is-primary" v-on:click="upFighterTwo">upFighterTwo</button>
+            </div>
+            <div class="column">
+                <h4>{{ fighterTwo.name }}</h4>
+                <h6> Level is {{ fighterTwo.level }}</h6>
+                <input v-model="fighterTwo.name">
+                <hr>
+                <select v-model="fighterTwo.element">
+                    <option v-for="item in fighterTwo.elements" v-bind:item="item">
+                        {{ item }}
+                    </option>
+                </select>
+                <span> You element is: {{ fighterTwo.element }}</span>
+                <hr>
+                <p>{{ fighterTwo.experience }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
